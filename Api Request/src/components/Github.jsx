@@ -40,8 +40,6 @@ function fetchUsers(query , page){
 
 
 
-
-
     const handleSearch = () =>{
         setIsLoading(true);
         setIsError(false);
@@ -58,22 +56,22 @@ function fetchUsers(query , page){
     };
 
     return (
-       <div id="search">
+       <div id="main">
             <h1>Search</h1>
-        <div>
+        <div id="submain">
             <input 
              value={query}
              onChange={(e) => setQuery(e.target.value)} 
              placeholder="search"
             />
-            <button disabled={isLoading} onClick={handleSearch}>
+            <button id="search" disabled={isLoading} onClick={handleSearch}>
                 {isLoading ? "loading" : "SEARCH"}
                 </button>
         </div>
         {isError ? "please fill te text" : null}
         <div>
             {users?.map((item) =>(
-                <div key={item.id}>{item.login}</div>
+                <div className="data" key={item.id}>{item.login}</div>  //mapping login id
             ))}
         </div>
        </div>

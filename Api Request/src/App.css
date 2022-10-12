@@ -1,3 +1,57 @@
 .App {
   text-align: center;
 }
+
+*{
+  text-align: center;
+  margin: auto;
+}
+
+h1{
+  margin: 20px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.submain{
+  display: flex;
+  width: 100%;
+}
+
+input {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+
+
+.data {
+  padding: 1rem;
+  width: auto;
+}
+
+.data:hover {
+  background-color: gainsboro;
+  color: white;
+  cursor: pointer;
+}
+
+#search{
+  width: 10%;
+  color: white;
+  border-radius: 18px;
+  padding: 12px;
+  background-color: gray;
+}
+
+#search:hover{
+  background-color: cornsilk;
+  color: black;
+  cursor: pointer;
+}
+
