@@ -1,11 +1,13 @@
 import './App.css'
+import Form from "./Component/Form"
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
 
-  return (
-    <div className="App">
-      
-    </div>
+  return (  
+    <ChakraProvider>
+     <Form />
+    </ChakraProvider> 
   )
 }
 
