@@ -1,3 +1,48 @@
 .App {
   text-align: center;
+  width: 100%;
+}
+
+.submain{
+  display: flex;
+  margin: auto;
+}
+
+.subhead{
+  font-size: large;
+  font-weight: bolder;
+}
+
+.subhead1{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.filter{
+  width: 15%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+}
+
+.productmain{
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.Card{
+  padding: 10px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10px;
+}
+
+.prodImg{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+ 
 }
